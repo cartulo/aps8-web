@@ -1,0 +1,14 @@
+<p-carousel [value]="infoDevs" [numVisible]="1" [numScroll]="1" [circular]="true">
+    <ng-template let-infoDev pTemplate="item">
+        <div class="flex md:justify-content-center m-2">
+            <div class="flex align-items-center justify-content-center font-bold m-2">
+                <p-image
+                    src="../../../assets/imgs/{{ infoDev.imagem }}"
+                    [alt]="infoDev.imagemTextoAlternativo" width="250"></p-image>
+            </div>
+            <div class="flex align-items-center justify-content-center font-bold">
+                <p>{{ infoDev.texto }}</p>
+            </div>
+        </div>
+    </ng-template>
+</p-carousel>
